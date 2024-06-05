@@ -4,6 +4,9 @@ jobs:
   sample-job1:
     runs-on: ubuntu-latest
     steps:
+      - name: run before checkout
+      - run: ls
+      - name: run after checkout
       - uses: actions/checkout@v4
       - run: ls -l
 
